@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drinks - Nairobi's Best Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Food & Drinks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Nairobi's Favorite Food & Drinks</h1>
+                <p>Authentic flavors delivered to your doorstep</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn">Order Now</a>
+                    <a href="#specials" class="btn btn-outline">Today's Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2010, Food & Drinks has been serving Nairobi with delicious meals and refreshing beverages. Our mission is to provide high-quality food with authentic flavors at affordable prices.</p>
+                    <p>We source our ingredients from local farmers and trusted suppliers to ensure freshness and support our community. Our chefs bring years of experience and passion to every dish they prepare.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/restaurant.png" alt="Our Restaurant">
+                </div>
+            </div>
+        </section>
+
+        <section class="full-menu" id="menu">
+            <h2>Our Full Menu</h2>
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h3>Burgers & Sandwiches</h3>
+                    <ul>
+                        <li>
+                            <span class="item-name">Classic Beef Burger</span>
+                            <span class="item-price">Ksh.450</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Chicken Sandwich</span>
+                            <span class="item-price">Ksh.400</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Veggie Burger</span>
+                            <span class="item-price">Ksh.380</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Pizzas</h3>
+                    <ul>
+                        <li>
+                            <span class="item-name">Margherita</span>
+                            <span class="item-price">Ksh.1,800</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Pepperoni</span>
+                            <span class="item-price">Ksh.2,200</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Hawaiian</span>
+                            <span class="item-price">Ksh.2,000</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Drinks</h3>
+                    <ul>
+                        <li>
+                            <span class="item-name">Fresh Juice</span>
+                            <span class="item-price">Ksh.150</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Soda</span>
+                            <span class="item-price">Ksh.120</span>
+                        </li>
+                        <li>
+                            <span class="item-name">Bottled Water</span>
+                            <span class="item-price">Ksh.80</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="specials">
+            <h2>Today's Special Offers</h2>
+            <div class="food-items">
+                <div class="food-card">
+                    <div class="badge">-27%</div>
+                    <img src="images/burger.png" alt="Burger Meal">
+                    <h3>Burger Meal with Chips</h3>
+                    <p>Juicy beef patty with fries and special sauce</p>
+                    <div class="price-container">
+                        <span class="price">Ksh.500.00</span>
+                        <span class="old-price">Ksh.690.00</span>
+                    </div>
+                    <button class="add-to-cart" data-id="101" data-name="Burger Meal" data-price="500">Add to Cart</button>
+                </div>
+                
+                <div class="food-card">
+                    <div class="badge">-17%</div>
+                    <img src="images/pizza.png" alt="Pepperoni Pizza">
+                    <h3>Pepperoni Feast Pizza</h3>
+                    <p>12" pizza with double pepperoni and extra cheese</p>
+                    <div class="price-container">
+                        <span class="price">Ksh.2,500.00</span>
+                        <span class="old-price">Ksh.3,000.00</span>
+                    </div>
+                    <button class="add-to-cart" data-id="102" data-name="Pepperoni Pizza" data-price="2500">Add to Cart</button>
+                </div>
+                
+                <div class="food-card">
+                    <div class="badge">-33%</div>
+                    <img src="images/fresh juice.png" alt="Refreshing Mint Lemonade">
+                    <h3>Fresh Mint Lemonade</h3>
+                    <p>Refreshing homemade mint lemonade</p>
+                    <div class="price-container">
+                        <span class="price">Ksh.100.00</span>
+                        <span class="old-price">Ksh.150.00</span>
+                    </div>
+                    <button class="add-to-cart" data-id="103" data-name="Mint Lemonade" data-price="100">Add to Cart</button>
+                </div>
+                
+                <div class="food-card">
+                    <div class="badge">-20%</div>
+                    <img src="images/soda.jpeg" alt="Soft Drink Combo">
+                    <h3>Soft Drink Combo</h3>
+                    <p>2L soda bottle + 2 glasses with ice</p>
+                    <div class="price-container">
+                        <span class="price">Ksh.200.00</span>
+                        <span class="old-price">Ksh.250.00</span>
+                    </div>
+                    <button class="add-to-cart" data-id="104" data-name="Soft Drink Combo" data-price="200">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Customer Reviews</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The burger meal is absolutely worth every shilling! Consistent quality every time."</p>
+                    <div class="customer">- Jane A., Westlands</div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Their pizza is the best in Nairobi. Always fresh and delicious."</p>
+                    <div class="customer">- Fred M., Kilimani</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2><i class="fas fa-map-marker-alt"></i> Our Location</h2>
+                    <p><i class="fas fa-building"></i> 123 Food Street, Nairobi</p>
+                    <p><i class="fas fa-clock"></i> Open: Mon-Sun, 8AM - 10PM</p>
+                    <p><i class="fas fa-phone"></i> Phone: 0200 789000</p>
+                    <p><i class="fas fa-envelope"></i> Email: orders@foodanddrinks.co.ke</p>
+                    
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.854476107489!2d36.82121431475387!3d-1.268635835980772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnMDcuMSJTIDM2wrA0OScyMi4xIkU!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2><i class="fas fa-envelope"></i> Send Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="07XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (optional):</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message or order details"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-basket"></i> Your Order</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <p>Subtotal: <span>Ksh.<span id="total-price">0.00</span></span></p>
+            <p>Delivery: <span>Ksh.200.00</span></p>
+            <p class="grand-total">Total: <span>Ksh.<span id="grand-total">0.00</span></span></p>
+            <button class="checkout-btn"><i class="fas fa-credit-card"></i> Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Payment Methods</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-m-pesa"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Food & Drinks Kenya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
