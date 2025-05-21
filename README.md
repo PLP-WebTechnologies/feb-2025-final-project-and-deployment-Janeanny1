@@ -22,4 +22,7 @@ Create a well-structured HTML5 document.
 Use at least 5 different HTML elements.
 Ensure semantic correctness.
 
+### Deployment Link
+''' https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-Janeanny1/
+
 Good luck and happy coding! 🚀💻
